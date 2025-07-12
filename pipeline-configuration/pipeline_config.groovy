@@ -1,9 +1,4 @@
-library_configuration {
-  merge = true
+@merge {
   sonar
 }
-/*
-libraries {
-  sonar
-}*/
 
