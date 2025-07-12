@@ -11,5 +11,19 @@ pipeline {
         }
       }
     } 
+    stage ('Sonar code analysis'){
+      steps {
+        script {
+          code_analysis()
+        }
+      }
+    }
+    stage ('build'){
+      steps {
+        script {
+          build()
+        }
+      }
+    }  
   }
 }
