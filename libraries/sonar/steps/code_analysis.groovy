@@ -1,6 +1,6 @@
 void call () {
     println("####### STARTED SONARQUBE ANALYISIS ##############")
-    if(pipelineConfig.SONAR_PROJECT_KEY =! null) {
+    if(pipelineConfig.SONAR_PROJECT_KEY != null) {
       withSonarQubeEnv('SonarQubeServer') {
         def SONAR_SCANNER_HOME = tool 'SonarScanner' 
         sh "${SONAR_SCANNER_HOME}/bin/sonar-scanner -Dsonar.projectKey=${pipelineConfig.SONAR_PROJECT_KEY}"
