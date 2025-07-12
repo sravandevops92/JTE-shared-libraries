@@ -1,4 +1,8 @@
-libraries{
-  merge = true // allow individual apps to contribute additional libraries
+library_configuration {
+  merge = true
+}
+
+libraries {
   sonar
 }
+
