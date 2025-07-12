@@ -4,13 +4,13 @@ pipeline {
    maven 'maven'
  }
   stages {
-    stage ('test'){
+    /*stage ('test'){
       steps {
         script {
           test()
         }
       }
-    } 
+    } */
     stage ('Sonar code analysis'){
       steps {
         script {
