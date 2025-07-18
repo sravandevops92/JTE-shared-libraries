@@ -4,6 +4,13 @@ pipeline {
    maven 'maven'
  }
   stages {
+    stage ("linting") {
+      steps {
+        script {
+          lint()
+        }
+      }
+    }
     stage ('test'){
       steps {
         script {
