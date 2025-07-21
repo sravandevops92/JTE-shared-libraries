@@ -32,12 +32,12 @@ pipeline {
         }
       }
     } 
-    stage ('Publish Artifacts') {
+   /*stage ('Publish Artifacts') {
       steps {
         script {
           publish_package()
         }
       }
-    }
+    }*/
   }
 }
