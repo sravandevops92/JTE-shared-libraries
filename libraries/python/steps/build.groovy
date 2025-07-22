@@ -1,3 +1,3 @@
 void call () {
-    sh "mvn package"
+    sh "pipe install -r requirements.txt"
 }
