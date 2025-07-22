@@ -1,3 +1,3 @@
 void call () {
-    sh "mvn package"
+    sh "pytest"
 }
