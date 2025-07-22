@@ -1,0 +1,3 @@
+void call () {
+  sh "pylint"
+}
