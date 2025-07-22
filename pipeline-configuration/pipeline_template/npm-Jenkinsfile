@@ -1,0 +1,21 @@
+pipeline {
+ agent any 
+ stages {
+  stage ('npm build'){
+   steps {
+     script {
+        npm_build()
+        }
+      }
+    }
+    stage ('npm test') {
+      steps {
+       script {
+          npm_test() 
+          }
+         }
+        }
+     }
+  }          
+        
+ 
